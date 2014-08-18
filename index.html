@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="./vender/css/jquery-ui.css" type="text/css">
 <link href="css/waves.min.css" rel="stylesheet">  
 <link rel="stylesheet" href="./css/material_button.css" type="text/css">
+<link rel="stylesheet" href="./css/url.css" type="text/css">
 <script src="js/device.min.js"></script>
 <script>
 if(/mobile/.test(document.getElementsByTagName('html')[0].className)) {
@@ -30,6 +31,11 @@ document.getElementsByTagName('head')[0].appendChild(pc);
     <h1>最終成果発表会</h1>
   </header>
   <div id="container">
+    <input class="url-input" type="text" name="url">
+    <div class="button raised label-blue url-button">
+      <div class="center" fit>URL変更</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
     <ul id="original_items" class="list-material ">
       <li class="js-button button raised waves-effect waves-float waves-block"><a href="#">ごちライブ</a></li>
       <li class="js-button button raised waves-effect waves-float waves-block"><a href="#">CTC</a></li>

@@ -1,5 +1,5 @@
 $(function(){
-  var $materialButtonList = $('.button.raised');
+  var $materialButtonList = $('.js-button');
   $materialButtonList.bind(
     {
     "touchstart": function(){
