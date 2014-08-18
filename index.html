@@ -11,20 +11,33 @@
 <script src="js/device.min.js"></script>
 <script>
 if(/mobile/.test(document.getElementsByTagName('html')[0].className)) {
-var sp = document.createElement('link'); sp.href = 'css/sp.css'; sp.rel = 'stylesheet';
+var sp = document.createElement('link'); sp.href = 'css/matsuda.css'; sp.rel = 'stylesheet';
 document.getElementsByTagName('head')[0].appendChild(sp);
 } else {
 var pc = document.createElement('link'); pc.href = 'css/pc.css'; pc.rel = 'stylesheet';
 document.getElementsByTagName('head')[0].appendChild(pc);
 }
 </script>
-
-
-<title>フォーマット</title>
+<title>フロントエンドCAMP 最終成果発表会</title>
 </head>
 <body>
 <div id="wrap">
-	
+  <header id="header">
+    <h2>フロントエンドCAMP</h2>
+    <h1>最終成果発表会</h1>
+  </header>
+  <div id="container">
+    <ul class="list-material">
+      <li><a href="#">ごちライブ</a></li>
+      <li><a href="#">CTC</a></li>
+      <li><a href="#">WIM</a></li>
+      <li><a href="#">Shell</a></li>
+      <li><a href="#">intimates</a></li>
+      <li><a href="#">WYC</a></li>
+      <li><a href="#">コルジ</a></li>
+    </ul>
+  </div>
+
 </div>
 
 <!--[if lt IE 9]>
