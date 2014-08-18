@@ -1,3 +1,4 @@
 $(function(){
-	console.log('hoge');
+  // Waves plugin activated.
+  Waves.displayEffect();
 });
