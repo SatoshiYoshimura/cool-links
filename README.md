@@ -1,4 +1,4 @@
--cool-links
+cool-links
 ===========
 
 cool links
