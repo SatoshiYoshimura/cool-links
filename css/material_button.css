@@ -21,7 +21,7 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-.button.raised:active {
+.button.raised.sorting {
   box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.6);
   transition-delay: 0s;
 }
