@@ -2,6 +2,11 @@ $(function(){
   // Waves plugin activated.
   Waves.displayEffect();
 
+  // heightを100%に
+  (function(){
+    $('#wrap').height($(window).height());
+  })();
+
   // focus a line of list
   (function(){
     var stretchLength = 5;
