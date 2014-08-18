@@ -1,3 +1,4 @@
+/** variables ** */
 /** Base  ** */
 ul {
   list-style-type: none; }
@@ -35,6 +36,7 @@ ul {
 /** Module ** */
 .list-material li a {
   display: block;
+  position: relative;
   width: 100%;
   height: 50px;
   background-color: #a3e9a4;
