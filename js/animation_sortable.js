@@ -23,6 +23,7 @@ jQuery(function(){
   // with some event handler extras...
   jQuery("#original_items").sortable({
 
+    containment: $('#wrap'),
     // on sorting start, hide the original items...
     // only adjust the visibility, we still need
     // their float positions..!
