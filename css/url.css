@@ -1,0 +1,17 @@
+.url-input{
+  margin: 10px 0 0 10px;
+}
+
+.url-button{
+  display:inline-block;
+  float:right;
+  width: 78px;
+}
+
+.label-blue {
+  color: #4285f4; 
+}
+
+.center{
+  text-align:center;
+}
