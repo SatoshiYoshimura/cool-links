@@ -1,0 +1,58 @@
+/** variables ** */
+/** Base  ** */
+ul {
+  list-style-type: none; }
+
+* {
+  box-sizing: border-box;
+  color: #053805; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding: 0; }
+
+/** Layout ** */
+#wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #259b24; }
+
+#container {
+  padding: 0 10px; }
+
+#header {
+  height: 80px;
+  padding: 10px 0;
+  background: url("../img/bg_header_01.png") left top no-repeat;
+  background-size: contain;
+  color: white;
+  text-align: center; }
+  #header h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px; }
+  #header h2 {
+    margin: 0;
+    font-size: 16px; }
+
+/** Module ** */
+.list-material li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #ffef39;
+  border: #259b24 1px solid;
+  border-bottom: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px; }
+.list-material li:last-child a {
+  border-bottom: #259b24 1px solid; }
+
+.separate.list-material {
+  margin-bottom: 10px;
+  border: #999999 1px solid;
+  box-shadow: 0px 1px 5px 0 #aaaaaa; }
