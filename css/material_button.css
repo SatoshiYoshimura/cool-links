@@ -1,27 +1,38 @@
 .button {
-  display: inline-block;
-  position: relative;
-  width: 120px;
-  height: 32px;
+  display: block;
   line-height: 32px;
+  width:300px;
   border-radius: 2px;
   font-size: 0.9em;
   background-color: #fff;
   color: #646464;
-}
-
-.button > paper-ripple {
-  border-radius: 2px;
-  overflow: hidden;
+  margin: 0 0 0 0;
 }
 
 .button.raised {
-  transition: box-shadow 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
+ul .button:first-child a{
+  background-color: #5677fc;
+  
+}
+
 .button.raised.sorting {
   box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.6);
-  transition-delay: 0s;
+}
+
+#original_items, #cloned_items {
+    list-style: none;
+}
+
+#original_items li {
+    z-index: 5;
+}
+
+#cloned_items li {
+    position: absolute;
+    z-index: 1;
 }
