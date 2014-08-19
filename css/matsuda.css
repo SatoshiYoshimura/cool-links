@@ -3,6 +3,11 @@
 ul {
   list-style-type: none; }
 
+dl {
+  margin: 0; }
+  dl dd {
+    margin: 0; }
+
 * {
   box-sizing: border-box;
   color: #053805; }
@@ -17,7 +22,8 @@ ul {
 #wrap {
   width: 100%;
   height: 100%;
-  background-color: #259b24; }
+  background-color: #259b24;
+  overflow: scroll; }
 
 #container {
   padding: 0 10px; }
@@ -48,9 +54,16 @@ ul {
   border-bottom: none;
   text-align: center;
   font-size: 18px;
+  font-weight: bold;
   line-height: 50px; }
 .list-material li:last-child a {
   border-bottom: #259b24 1px solid; }
+.list-material li dl dd {
+  display: none;
+  padding: 4px 0;
+  background-color: #fff271;
+  text-align: center;
+  border-top: #259b24 1px solid; }
 
 .separate.list-material {
   margin-bottom: 10px;
