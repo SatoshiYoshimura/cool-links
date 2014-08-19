@@ -12,14 +12,14 @@ $(function(){
     var stretchLength = 5;
     var margin = 10;
     var borderStyle = '#259b24 1px solid';
-    var $jsListLi = $('#js-list li');
+    var $jsListLi = $('#original_items li');
     
     var defaultList = {
       width: $jsListLi.width(),
       height: $jsListLi.height()
     };
 
-    $jsListLi.click(function(){
+    $jsListLi.stop(true, true).click(function(){
       var $thisList = $(this);
       var targetList = {
         width: $thisList.width(),
@@ -27,11 +27,11 @@ $(function(){
       };
       var index = $thisList.index();
      
+      $jsListLi.find('dd').hide();
       $jsListLi.not($thisList)
         .css({
           borderBottom: 'none',
           width: defaultList.width,
-          height: defaultList.height,
           left: 0,
           margin: 0
         });
@@ -39,12 +39,11 @@ $(function(){
       $jsListLi.eq(index-1).css({
         borderBottom: borderStyle
       });
-
+      
       if(!$thisList.hasClass('selected')) {
         $jsListLi.removeClass('selected');
         // focusの挙動
         $thisList
-          // .css(focuesed(targetList))
           .css({
             borderBottom: borderStyle,
             width: targetList.width + stretchLength * 2,
@@ -52,7 +51,11 @@ $(function(){
             margin: margin + 'px 0'
           })
           .addClass('selected');
+      
       }
+        setTimeout(function(){
+          $thisList.find('dd').slideToggle();
+        }, 500);
     });
     // $jsListLi#click() ends.
   })();
