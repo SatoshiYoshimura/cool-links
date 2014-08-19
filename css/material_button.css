@@ -17,8 +17,11 @@
 
 ul .button:first-child a{
   background-color: #5677fc;
-  
 }
+#cloned_items .button a{
+  background-color: #ffef39;
+  }
+
 
 .button.raised.sorting {
   box-shadow: 0 13px 27px 0 rgba(0, 0, 0, 0.6);
