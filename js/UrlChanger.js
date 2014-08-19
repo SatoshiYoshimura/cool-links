@@ -19,8 +19,7 @@ coolLinks.UrlChanger = null;
       self.setFirstButton();
       self.setUrl();
     });
-    
-    
+
   }
 
   // 名前空間用のオブジェクトに代入
@@ -35,7 +34,7 @@ coolLinks.UrlChanger = null;
   }
   UrlChanger.prototype.setUrl = function () {
     var text = this._$urlInput.val();
-    this._$firstMaterialButton.children('a:first-child').attr("href",text);
+    this._$firstMaterialButton.find('.js-link').attr("href",text);
   }
 
 })(); // 即実行
